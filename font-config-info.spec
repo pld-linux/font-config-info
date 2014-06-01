@@ -21,7 +21,8 @@ that users can send to developers to aid in debugging font rendering
 issues.
 
 %prep
-%setup -q
+%setup -qc
+mv %{name}-*/* .
 
 %{__sed} -i -e 's/gcc -Wall/%{__cc} %{rpmcflags}/' Makefile
 
