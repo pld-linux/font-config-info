@@ -1,4 +1,5 @@
 Summary:	Prints a Linux system's font configuration
+Summary(pl.UTF-8):	Wypisywanie konfiguracji fontów systemowych pod Linuksem
 Name:		font-config-info
 Version:	0.1
 Release:	0.1
@@ -8,7 +9,8 @@ Source0:	https://github.com/derat/font-config-info/archive/master/%{name}-%{vers
 # Source0-md5:	9c2cc15881b3d299a959da677fc9381b
 URL:		https://github.com/derat/font-config-info
 BuildRequires:	fontconfig-devel
-BuildRequires:	gtk+2-devel
+BuildRequires:	glib2-devel >= 2.0
+BuildRequires:	gtk+2-devel >= 2.0
 BuildRequires:	pkgconfig
 BuildRequires:	sed >= 4.0
 BuildRequires:	xorg-lib-libX11-devel
@@ -19,6 +21,12 @@ font-config-info is a tiny program that queries and prints a Linux
 system's font configuration. It is intended to produce brief reports
 that users can send to developers to aid in debugging font rendering
 issues.
+
+%description -l pl.UTF-8
+font-config-info to mały program odpytujący i wypisujący konfigurację
+fontów systemowych pod Linuksem. Ma za zadanie tworzyć krótkie
+raporty, które użytkownicy mogą wysyłać programistom w celu pomocy
+przy diagnostyce problemów z renderowaniem fontów.
 
 %prep
 %setup -qc
