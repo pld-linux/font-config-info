@@ -1,12 +1,12 @@
 Summary:	Prints a Linux system's font configuration
 Summary(pl.UTF-8):	Wypisywanie konfiguracji fontów systemowych pod Linuksem
 Name:		font-config-info
-Version:	0.1
-Release:	0.1
+Version:	0.2
+Release:	1
 License:	ASL 2.0
 Group:		Applications
 Source0:	https://github.com/derat/font-config-info/archive/master/%{name}-%{version}.tar.gz
-# Source0-md5:	9c2cc15881b3d299a959da677fc9381b
+# Source0-md5:	e0e1bc3d2bf7fd3dca530e599c5037aa
 URL:		https://github.com/derat/font-config-info
 BuildRequires:	fontconfig-devel
 BuildRequires:	glib2-devel >= 2.0
